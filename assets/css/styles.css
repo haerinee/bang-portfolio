@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #3c4657;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #3c4657;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #007ac8;
+}
+.work-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-title-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.work-title {
+  font-size: 3rem;
+  color: #3c4657;
+  margin: 0;
+  cursor: pointer;
+}
+
+.work-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.work-menu a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #3c4657;
+}
+
+.work-menu a:hover {
+  color: #007ac8;
+}
+
+/* 커서를 work-title 위에 둘 때 하위 메뉴 보이기 */
+.work-title-wrapper:hover .work-menu {
+  opacity: 1;
+  pointer-events: auto;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #3c4657;
+}
+
+.gallery-container {
+  padding: 40px 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.art-item {
+  text-align: center;
+}
+
+.art-item img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #d2d8d4;
+}
+
+.exhibition-container {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.tab-buttons button {
+  background-color: #d2d8d4;
+  color: #3c4657;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.tab-buttons button:hover {
+  background-color: #007ac8;
+  color: white;
+}
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .menu {
+    font-size: 1.2rem;
+    gap: 8px;
+  }
+
+  .work-title {
+    font-size: 2.2rem;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-buttons button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+.site-header {
+  width: 100%;
+  padding: 24px;
+  border-bottom: 1px solid #d2d8d4;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #3c4657;
+  transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: #007ac8;
+}
+.contact-container {
+  max-width: 600px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-line {
+  font-size: 1.1rem;
+  margin: 16px 0;
+}
+
+.contact-line a {
+  color: #007ac8;
+  text-decoration: none;
+}
+
+.contact-line a:hover {
+  text-decoration: underline;
+}
+.project-container {
+  padding: 40px 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.project-gallery img {
+  width: 100%;
+  border: 1px solid #d2d8d4;
+  transition: transform 0.2s ease;
+}
+
+.project-gallery img:hover {
+  transform: scale(1.02);
+}
+.exhibition-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+
+.exhibition-list li {
+  margin-bottom: 16px;
+}
+
+.exhibition-list a {
+  text-decoration: none;
+  color: #3c4657;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.exhibition-list a:hover {
+  color: #007ac8;
+}
+
+.exhibition-date {
+  font-size: 0.9rem;
+  color: #6c9ec9;
+}
