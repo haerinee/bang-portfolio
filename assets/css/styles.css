@@ -250,3 +250,31 @@ body {
   font-size: 0.9rem;
   color: #6c9ec9;
 }
+
+.landing-image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.landing-image:hover {
+  transform: scale(1.02);
+}
+
+/* 이미지 링크 전체 wrapper */
+.image-overlay-link {
+  position: relative;
+  display: inline-block;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.overlay-text {
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
+}
